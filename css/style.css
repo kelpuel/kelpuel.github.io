@@ -146,9 +146,9 @@ strong{
 }
 
 .projet--h2{
-    margin-top: 2em;
-    font-size: 4.5em;
-    text-align: justify;
+    margin-top: 1em;
+    font-size: 3.4em;
+    text-align: center;
     background-image: linear-gradient(to right, #36AF57 0%, #36AF57
     100%);
     background-repeat: repeat-x;
@@ -170,7 +170,7 @@ strong{
 
 .skill--h2{
     margin-top: 3.4em;
-    font-size: 2.9em;
+    font-size: 3em;
     margin-bottom: 2em;
     text-align: center;
     background-image: linear-gradient(to right, #36AF57 0%, #36AF57
@@ -209,7 +209,7 @@ strong{
 
 .about--h2{
     margin-top: 3.4em;
-    font-size: 2.9em;
+    font-size: 2.4em;
     text-align: center;
     background-image: linear-gradient(to right, #36AF57 0%, #36AF57
     50%);
