@@ -35,6 +35,7 @@
 
 /* General Style */
 
+
 body {
         background: var(--clr-light);
         color: var(--clr-dark);
@@ -54,11 +55,6 @@ img {
     }
 
 strong{
-    background-image: linear-gradient(to right, #d5d5d5 0%, #d5d5d5
-    100%);
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    background-size: 100% 0.4em;
     color: var(--clr-accent);
     font-size: 100%;
 }
@@ -101,15 +97,14 @@ strong{
 }
 
 .logo{
-    width: 80%;
-    padding-left: 4.3em;
-    padding-top: 1em;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
     
     
 }
 
 .header--img{
-    width: 25em;
     height: auto;
     padding: 1em;
 
@@ -122,10 +117,7 @@ strong{
 }
 
 .header--text{
-    position: relative;
-    padding-left: 0.8em;
     padding-top: 1.5em;
-    width: 15em;
     font-size: 1.5em;
     text-align: center;
 
@@ -146,14 +138,12 @@ strong{
 }
 
 .projet--h2{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #36AF57;
     margin-top: 1em;
     font-size: 3.4em;
     text-align: center;
-    background-image: linear-gradient(to right, #36AF57 0%, #36AF57
-    100%);
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    background-size: 100% 0.4em;
 }
 
 .projet--img{
@@ -169,53 +159,63 @@ strong{
 /* Mes Compétences */
 
 .skill--h2{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #36AF57;
     margin-top: 3.4em;
     font-size: 3em;
     margin-bottom: 2em;
     text-align: center;
-    background-image: linear-gradient(to right, #36AF57 0%, #36AF57
-    50%);
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    background-size: 100% 0.4em;
 
 }
 .skill--h3-l{
-    background-image: linear-gradient(to left, #36AF57 10%, #36af5600
-    50%);
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    background-size: 100% 0.4em;
-
     font-size: 2em;
     text-align: right;
     padding-top: 1em;
+    padding-bottom: 4px;
+    position: relative;
+    text-decoration: none;
+    }
+.skill--h3-l::after{
+    background: var(--clr-accent);
+        background: linear-gradient(to left, transparent 0%, var(--clr-accent) 50%, transparent 100%);  
+        content: "";
+        position: absolute;
+        bottom: 0.2em;
+        right: 0em;
+        height: 2px;
+        width: 60%;
 
 }
-
 .skill--h3-r{
-    background-image: linear-gradient(to right, #36AF57 10%, #36af5600
-    40%);
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    background-size: 100% 0.4em;
-
     font-size: 2em;
     padding-top: 1em;
+    padding-top: 1em;
+    padding-bottom: 4px;
+    position: relative;
+    text-decoration: none;
+}
+.skill--h3-r::after{
+    background: var(--clr-accent);
+        background: linear-gradient(to right, transparent 0%, var(--clr-accent) 50%, transparent 100%);  
+        content: "";
+        position: absolute;
+        bottom: 0.2em;
+        left: 0em;
+        height: 2px;
+        width: 60%;
 
 }
 
 /* About me */
 
 .about--h2{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #36AF57;
     margin-top: 3.4em;
     font-size: 2.4em;
     text-align: center;
-    background-image: linear-gradient(to right, #36AF57 0%, #36AF57
-    50%);
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    background-size: 100% 0.4em;
 }
 
 .about--p-presentation{
@@ -236,6 +236,9 @@ strong{
 
 /* Contact */
 .contact--h2{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #36AF57;
     padding-top: 2em;
     background-color: #36AF57;
     font-size: 2.9em;
@@ -307,4 +310,228 @@ input[type=text], select, textarea {
     gap: 1em;
     padding-left: 4.5em;
   }
+
+/* Media queries */
+@media  screen and (min-width:320px){
+    .header--text{
+        padding-top: 4em;
+        font-size:1.2em;
+    }
+    .header--img{
+        padding-left: 0.9em;
+    }
+    .projet--h2{
+        padding-top: 2em;
+        padding-left: 0em;
+    }
+    .projet--ul{
+        padding-left: 0em;
+    }
+    .skill--h2{
+        padding-top: 1em;
+        width: 80%;
+        font-size: 2.4em;
+        text-align: center;
+    }
+    .about--h2{
+        padding-top: 6.5em;
+    }
+    .contact--h2{
+        text-align: center;
+        padding: 1em;
+        width: auto;
+        padding-top: 5em;
+    }
+
+
+
+}
+
+
+
+
+@media  screen and (min-width:360px){
+    .projet--h2{
+        padding-top: 2em;
+        font-size: 3.2em;
+    }
+    .skill--h2{
+        display: flex;
+        justify-content: center;
+        margin-top: 3.2em;
+    }
+    .about--h2{
+        padding-top: 6.2em;
+    }
+    .contact--h2{
+        padding-top: 5em;
+    }
+    .header--text{
+        padding-top: 2.2em;
+    }
+}
+@media screen and (min-width:375px) {
+    .projet--h2{
+        padding-top: 2.4em;
+    }
+    .skill--h2{
+        padding-top: 1.5em;
+        padding-left: 1.6em;
+    }
+    .contact--h2{
+        padding-top: 5.2em;
+    }
+
+    .about--h2{
+        padding-top: 6.5em;
+    }
+    .header--text{
+      padding-top: 3.5em;
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+}
+
+@media screen and (min-width:412px) {
+    .projet--h2{
+        padding-top: 1.5em;
+    }
+    
+}
+
+@media  screen and (min-width: 414px) {
+    .projet--h2{
+        padding-top: 1.5em;
+    }
+
+
+}
+
+@media screen and (min-width:425px) {
+    .header--text{
+        padding-top: 7em;
+    }
+    .about--h2{
+        padding-top: 5.5em;
+    }
+    
+}
+
+@media screen and (min-width: 430px) {
+    .header--text{padding-top: 3em;
+    }
+    .projet--h2{
+        margin-top: 2.5em;
+    }
+    .skill--h2{
+        margin-top: 2.8em;
+    }
+
+  
+}
+
+@media screen and (min-width:475px) {
+    .header--text{
+        padding-top: 4em;
+    }
+    .skill--h2{
+        padding-top: 1.5em;
+    }
+    .about--h2{
+        padding-top: 7.4em;
+    }
+    .contact--h2{
+        padding-top: 6em;
+    }
+}
+
+@media  screen and (min-width:530px) {
+
+
+    .projet--h2{
+        padding-top: 1.6em;
+    }
+
+    .skill--h2{
+        padding-top: 1.6em;
+    }
+    
+}
+
+@media screen and (min-width:590px) {
+    .header--text{
+        padding-top: 5em;
+    }
+    .projet--h2{
+        padding-top: 2em;
+    }
+
+    .skill--h2{
+        padding-top: 2em;
+    }
+    .about--h2{
+        padding-top:8em;
+    }
+    .contact--h2{
+        padding-top: 0.8em;
+    }
+}
+
+@media screen and (min-width:705px) {
+    .header--text{
+        padding-top: 6em;
+    }
+    .projet--h2{
+        padding-top: 2.4em;
+    }
+
+    .skill--h2{
+        padding-top: 2.4em;
+    }
+    .about--h2{
+        padding-top:8.8em;
+    }
+    .contact--h2{
+        padding-top: 7em;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .header--text{
+        padding-top: 6em;
+    }
+    .projet--h2{
+        padding-top: 2.5em;
+
+    }
+    .skill--h2{ 
+        padding-top: 2.5em;
+    }
+    .about--h2{
+        padding-top: 8.7em;
+    }
+    .contact--h2{
+        padding-top: 7em;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .header--text{
+        padding-top: 7.5em;
+    }
+    .projet--h2{
+        padding-top: 3em;
+    }
+
+    .skill--h2{
+        padding-top: 3em;
+    }
+    .about--h2{
+        padding-top:9em;
+    }
+    .contact--h2{
+        padding-top: 7.5em;
+    }
+}
+
 
